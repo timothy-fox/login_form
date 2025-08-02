@@ -1,6 +1,39 @@
-form {
-    
-  display: inline-block;
-  padding: 1em;
-  border-radius: 1em;
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+}
+
+.left-panel {
+  flex: 1;
+  padding: 60px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 150px;
+  text-align: center;
+}
+
+.right-panel {
+  flex: 1;
+  display: flex;
+  align-items: center;    
+  justify-content: flex-end;  
+  padding-right: 150px;        
+}
+
+.right-panel img {
+
+  border-radius: 12px;
+  height: 90vh;
+  object-fit: contain;
+}
+
+.container {
+    position: relative;
+
 }

@@ -7,45 +7,50 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Get Started Now!</h1>
-   
-    <p>
-        Enter your credentials to access your account
-    </p>
+    <div class="left-panel">
+        <h1>Get Started Now!</h1>
     
-    <form action="/my-handling-form-page" method="post">
         <p>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="user_name" />
+            Enter your credentials to access your account
         </p>
         
-        <p>
-            <label for="mail">Email:</label>
-            <input type="email" id="mail" name="user_email" />
+        <form action="/my-handling-form-page" method="post">
+            <div class="container">
+                <p>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="user_name" />
+                </p>
+                
+                <p>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="user_email" />
+                </p>
+            
+                <p>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="user_password" />
+                </p>
+            </div>
+            <p>
+                <input type="radio" id="terms" name="user_terms" />
+                <label for="terms">I agree to the Terms & Privacy</label>
+            </p>
+        </form> 
+
+        <p class="button">
+            <button type="submit">Login</button>
         </p>
+
+        <p>
+            Have an account? <a href="#">Sign in</a>
+        </p>
+        
+        <footer>© 2025 Timothy Fox</footer>
+    </div>
     
-        <p>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="user_password" />
-        </p>
-
-        <p>
-            <input type="radio" id="terms" name="user_terms" />
-            <label for="terms">I agree to the Terms & Privacy</label>
-        </p>
-    </form> 
-
-    <p class="button">
-        <button type="submit">Login</button>
-    </p>
-
-    <p>
-        Have an account? <a href="#">Sign in</a>
-    </p>
-
-    <img src="images/goldwheat.jpg" height="200px">
-
-    <footer>© 2025 Timothy Fox</footer>
+    <div class="right-panel">
+        <img src="images/grass.jpg">
+    </div>
 
 </body>
 </html>
